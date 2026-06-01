@@ -24,3 +24,5 @@ app.use('/api/status', status);
 app.listen(config.port, () => {
   console.log(`Demo app is running on ${config.port}!`);
 });
+
+module.exports = app;
