@@ -15,7 +15,7 @@ app.engine('handlebars', engine({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
 app.set('port', config.port);
 
-app.use('/', express.static('public'))
+app.use('/', express.static(path.join(__dirname, 'public')))
 app.use('/', index);
 app.use('/who', who);
 app.use('/contact', contact);
